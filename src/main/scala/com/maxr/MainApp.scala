@@ -6,13 +6,13 @@ object MainApp extends App {
   println("Starting app")
 
   val gpio: GpioController = GpioFactory.getInstance
-  val led: GpioPinDigitalOutput = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_10, "MyLed", PinState.LOW)
+  val led: GpioPinDigitalOutput = gpio.provisionDigitalOutputPin(RaspiPin.GPIO_05, "MyLed", PinState.LOW)
 
-  println("Setting pin 10 to high")
+  println("Setting pin 5 to high")
   led.setState(PinState.HIGH)
   println("Sleeping 5 seconds")
   Thread.sleep(5000)
-  println("Setting pin 10 to low")
+  println("Setting pin 5 to low")
   led.setState(PinState.LOW)
   println("All done...")
 }
