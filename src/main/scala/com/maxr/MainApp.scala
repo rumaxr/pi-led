@@ -21,7 +21,7 @@ object MainApp extends App {
 
     if (doSleep) {
       println(s"Sleeping $sleepTime milliseconds")
-      Thread.sleep(2000)
+      Thread.sleep(sleepTime)
     }
   }
 }
